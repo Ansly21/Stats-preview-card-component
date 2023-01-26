@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://github.com/Ansly21/Stats-preview-card-component]
 - Live Site URL: [Add live site URL here]
 
 ## My process
