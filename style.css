@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+main {
+    background-color:  hsl(244, 38%, 16%);
+    display: flex;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+.left {
+    padding: 3rem 4rem 3rem 3rem;
+    margin: 0 3rem;
+}
+
+.left h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 00;
+}
+
+.left span {
+    color: hsl(277, 64%, 61%);
+}
+
+.left p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    opacity: 80%;
+}
+
+.sub-details {
+    color: white;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    justify-content: space-between
+}
+
+.sub-details h4 {
+    margin-right: 2rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.sub-details span {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.9rem;
+
+}
+
+.pic-container {
+    background-color: hsl(277, 64%, 61%);
+    display: flex;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 400;
+}
+
+img {
+    mix-blend-mode: multiply;
+    opacity: 65%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+@media (max-width: 1100px) {
+    body {
+        padding: 1rem 0;
+    }
+
+    main {
+        flex-direction:column-reverse;
+        min-width: 400px
+    }
+
+    .pic-container, img {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+    }
+
+    .left h1, .left p {
+        text-align: center;
+    }
+
+    .left {
+        padding: 1rem 1rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .sub-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+        margin: auto;
+    }
+
+    .left p {
+        margin-bottom: 0;
+    }
+
+    .sub-details h4 {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+    }
+
+}
